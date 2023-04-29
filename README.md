@@ -23,7 +23,7 @@ Skills
   </a>
   &nbsp;
   <a href="https://java.com" target="_blank" rel="noreferrer">
-    <img src="https://i.imgur.com/NkHHcl0.png" width="40" height="50" alt="Java" />
+    <img src="https://chathamlibrary.librarycalendar.com/sites/default/files/2022-11/java-logo.png" width="60" height="60" alt="Java" />
   </a>
   &nbsp;
 </p>
