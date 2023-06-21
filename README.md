@@ -1,6 +1,6 @@
 ### Hi 👋 my name is Alfonza
 
-I am Full Stack developer.
+I am a Full Stack developer.
 --------------------------
 
 *   🌍  Based in the Philadelphia Area
