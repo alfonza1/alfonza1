@@ -1,11 +1,18 @@
-### Hi there 👋
+### Hi 👋 my name is Alfonza
+
+I am Full Stack developer.
+--------------------------
+
+*   🌍  Based in the Philadelphia Area
+*   👨🏾‍💻  Heavy passion in Software Development
+*   🧠  Currently learning Python and AWS
+*   🤝  I'm open to collaborating on projects as a developer
 
 
 
+### Skills
 
-
-<!-- Skills
-<p >
+<div>
   <a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer">
     <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" width="36" height="36" alt="HTML5" />
   </a>
@@ -18,32 +25,24 @@
     <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/javascript-colored.svg" width="36" height="36" alt="JavaScript" />
   </a>
   &nbsp;
-  <a href="https://reactjs.org/" target="_blank" rel="noreferrer">
-    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/react-colored.svg" width="36" height="36" alt="React" />
-  </a>
-  &nbsp;
-  <div align = left;> <a href="https://java.com" target="_blank" rel="noreferrer">
-    <img src="https://chathamlibrary.librarycalendar.com/sites/default/files/2022-11/java-logo.png" width="60" height="60" alt="Java" />
-  </a>
- <a href="https://git.com" target="_blank" rel="noreferrer">
-    <img src="https://git-scm.com/images/logos/downloads/Git-Logo-1788C.png" width="90" height="30" alt="Git" />
+  <a href="https://angular.io/" target="_blank" rel="noreferrer">
+    <img src="https://angular.io/assets/images/logos/angularjs/AngularJS-Shield.svg" width="36" height="36" alt="Angular" />
   </a>
 
+
+  <a href="https://java.com" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/java-colored.svg" width="70" height="60" alt="Java" />
+  </a>
+  &nbsp;
+  </div>
+  <a href="https://spring.io/projects/spring-boot" target="_blank" rel="noreferrer">
+    <img src="https://www.vincenzoracca.com/images/spring.png" width="80" height="60" alt="Spring Boot" />
+  </a>
+  &nbsp;
+  <a href="https://www.mysql.com/" target="_blank" rel="noreferrer">
+    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/mysql-colored.svg" width="50" height="40" alt="MySQL" />
+  </a>
 </div>
-  &nbsp;
-</p>
 
-<!--
-**alfonza1/alfonza1** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
