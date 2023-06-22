@@ -1,10 +1,10 @@
 ### Hi 👋 my name is Alfonza
 
-I am a Full Stack developer.
+I am a Full Stack Developer
 --------------------------
 
 *   🌍  Based in the Philadelphia Area
-*   👨🏾‍💻  Heavy passion in Software Development
+*   👨🏾‍💻  Heavy passion for Software Development
 *   🧠  Currently learning Python and AWS
 *   🤝  I'm open to collaborating on projects as a developer
 
