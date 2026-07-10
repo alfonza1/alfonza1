@@ -1,17 +1,19 @@
-# Hi, I'm Alfonza
+<!-- Animated neofetch-style terminal card. Regenerate anytime with: node generate.mjs -->
+<div align="center">
 
-Full Stack Developer based in the Philadelphia area, focused on building production-ready web applications, backend APIs, cloud workflows, and CI/CD.
+<a href="https://github.com/alfonza1">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/alfonza1/alfonza1/main/dark_mode.svg">
+    <img alt="Alfonza — Full-Stack Developer @ JPMorgan Chase" src="https://raw.githubusercontent.com/alfonza1/alfonza1/main/light_mode.svg" width="820">
+  </picture>
+</a>
 
-Currently a Software Engineer at JPMorgan Chase, where I have contributed to enterprise engineering projects since 2023.
+<p>
+  <a href="https://alfonza-dev.web.app"><b>Portfolio</b></a>
+  &nbsp;·&nbsp;
+  <a href="https://www.playlastwords.com"><b>Last Words — the game</b></a>
+  &nbsp;·&nbsp;
+  <a href="mailto:alfonzadev@gmail.com"><b>Email</b></a>
+</p>
 
-**Frontend:** React, TypeScript, Vite, Tailwind CSS, HTML5 Canvas.
-
-**Backend:** Java, Spring Boot, REST APIs, microservices, PostgreSQL, Firebase Auth/JWT, server-authoritative business logic.
-
-**Cloud/platform:** AWS Step Functions, Kafka, event-driven systems, Docker, Cloud Run, Cloudflare Pages, GitHub Actions, Jenkins, Spinnaker.
-
-**Production skills:** CI/CD, automated testing, observability, Sentry, structured logging, secure auth, production debugging, scalable and cost-aware deployments.
-
-**Projects:** https://www.playlastwords.com - a desktop/mobile arcade defense game with Typing, Riddle, Math, Trivia, and voice controls.</br>
-
-**Portfolio:** [alfonza-dev.web.app](https://alfonza-dev.web.app)
+</div>
