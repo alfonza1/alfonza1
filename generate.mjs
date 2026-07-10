@@ -3,38 +3,39 @@
 //
 //   node generate.mjs
 //
-// Stats (repos/commits/stars/followers) are baked below; refresh them with:
+// Stats (repos/commits) are baked in STATS below; refresh them with:
 //   gh api graphql -f query='{ viewer { ... } }'
-// and edit STATS. Everything else is hand-authored profile content.
+// Everything else is hand-authored profile content.
 
 import { writeFileSync } from "node:fs";
 
 // ---- profile data -----------------------------------------------------------
-const ACCOUNT_CREATED = "2021-05-04T02:25:58Z";
-const STATS = { repos: 43, commits: 468, stars: 2, followers: 3 };
+// "Uptime" counts from birth (the neofetch meme) — recomputed on every run.
+const BIRTHDAY = "2000-02-25T00:00:00Z";
+const STATS = { repos: 43, commits: 468 };
 
 const INFO = [
   ["header", "alfonza1", "@github"],
   ["rule", 24],
-  ["kv", "OS", "Windows 11 Pro"],
+  ["kv", "OS", "Windows 11 Pro · Linux"],
   ["kv", "Host", "Philadelphia, PA"],
   ["kv", "Kernel", "Full-Stack Developer @ JPMorgan Chase"],
   ["kv", "Uptime", "%UPTIME%"],
   ["kv", "IDE", "VS Code · IntelliJ IDEA · Claude Code"],
   ["gap"],
-  ["kv", "Backend", "Java · Spring Boot · PostgreSQL · REST"],
-  ["kv", "Frontend", "TypeScript · React · Vite · Tailwind"],
-  ["kv", "Cloud", "AWS · Docker · Cloud Run · Actions · Kafka"],
-  ["kv", "Hobbies", "Shipping small products fast · AI apps"],
+  ["kv", "Languages", "Java · TypeScript · JavaScript · SQL · HTML/CSS"],
+  ["kv", "Backend", "Spring Boot · REST · Microservices · PostgreSQL · Firebase/JWT"],
+  ["kv", "Frontend", "React · Vite · Tailwind · HTML5 Canvas · Responsive UI"],
+  ["kv", "Cloud", "AWS · Docker · Cloud Run · Kafka · Actions · Jenkins · Spinnaker"],
+  ["kv", "Practices", "CI/CD · Automated testing · Observability · Sentry · Secure auth"],
+  ["kv", "Hobbies", "Shipping small products fast · AI apps · Game dev"],
   ["gap"],
-  ["kv", "Project", "playlastwords.com"],
+  ["kv", "Projects", "playlastwords.com · incident-commander"],
   ["kv", "Portfolio", "alfonza-dev.web.app"],
-  ["kv", "Email", "alfonzadev@gmail.com"],
   ["gap"],
   ["header2", "Contributions"],
   ["rule", 13],
   ["stat", "Repos", STATS.repos, "Commits", STATS.commits],
-  ["stat", "Stars", STATS.stars, "Followers", STATS.followers],
   ["gap"],
   ["palette"],
 ];
@@ -89,8 +90,8 @@ function build(t) {
   const top = BAR + 30;
   const rows = INFO.length;
   const H = top + rows * LH + 24;
-  const W = 840;
-  const upt = uptime(ACCOUNT_CREATED);
+  const W = 928;
+  const upt = uptime(BIRTHDAY);
 
   let defs = 0; // stagger index for the reveal animation
   const delay = () => (0.5 + defs++ * 0.14).toFixed(2);
@@ -170,4 +171,4 @@ function build(t) {
 
 writeFileSync("dark_mode.svg", build(THEMES.dark));
 writeFileSync("light_mode.svg", build(THEMES.light));
-console.log("wrote dark_mode.svg + light_mode.svg  (uptime:", uptime(ACCOUNT_CREATED) + ")");
+console.log("wrote dark_mode.svg + light_mode.svg  (uptime:", uptime(BIRTHDAY) + ")");
