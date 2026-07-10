@@ -30,7 +30,7 @@ const INFO = [
   ["kv", "Practices", "CI/CD · Automated testing · Observability · Sentry · Secure auth"],
   ["kv", "Hobbies", "Shipping small products fast · AI apps · Game dev"],
   ["gap"],
-  ["kv", "Projects", "playlastwords.com · incident-commander"],
+  ["kv", "Projects", "playlastwords.com"],
   ["kv", "Portfolio", "alfonza-dev.web.app"],
   ["gap"],
   ["header2", "Contributions"],
