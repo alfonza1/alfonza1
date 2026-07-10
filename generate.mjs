@@ -23,7 +23,7 @@ const INFO = [
   ["kv", "Uptime", "%UPTIME%"],
   ["kv", "IDE", "VS Code · IntelliJ IDEA · Claude Code"],
   ["gap"],
-  ["kv", "Languages", "Java · TypeScript · JavaScript · SQL · HTML/CSS"],
+  ["kv", "Languages", "Java · TypeScript · JavaScript · SQL"],
   ["kv", "Backend", "Spring Boot · REST · Microservices · PostgreSQL · Firebase/JWT"],
   ["kv", "Frontend", "React · Vite · Tailwind · HTML5 Canvas · Responsive UI"],
   ["kv", "Cloud", "AWS · Docker · Cloud Run · Kafka · Actions · Jenkins · Spinnaker"],
