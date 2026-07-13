@@ -1,4 +1,4 @@
-name: Update profile uptime
+name: Update profile card
 
 on:
   schedule:
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: profile-uptime-${{ github.ref }}
+  group: profile-card-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -25,19 +25,24 @@ jobs:
         with:
           node-version: 22
 
+      - name: Refresh public GitHub stats
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node update-profile-stats.mjs
+
       - name: Regenerate profile cards
         run: |
           node generate.mjs
           node generate-banner.mjs
 
-      - name: Commit changed uptime
+      - name: Commit changed profile data
         run: |
-          git add dark_mode.svg light_mode.svg banner_dark.svg banner_light.svg
+          git add profile.mjs dark_mode.svg light_mode.svg banner_dark.svg banner_light.svg
           if git diff --cached --quiet; then
-            echo "Profile uptime is already current."
+            echo "Profile card is already current."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit -m "profile: refresh birthday uptime"
+          git commit -m "profile: refresh generated card"
           git push

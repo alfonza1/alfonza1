@@ -11,7 +11,8 @@ export const P = {
   tagline: "I build production-ready web apps, backend APIs & cloud workflows.",
   portfolio: "alfonza-dev.web.app",
   game: "playlastwords.com",
-  stats: { repos: 43, commits: 468 },
+  // Public GitHub totals maintained by update-profile-stats.mjs.
+  stats: { repos: 31, commits: 554 },
   // badge row for the banner — [label, palette key], grouped by domain
   stack: [
     ["Java", "blue"], ["TypeScript", "blue"], ["Spring Boot", "green"], ["React", "green"],
