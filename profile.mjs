@@ -1,6 +1,5 @@
 // Shared profile data + helpers for the banner card design (generate-banner.mjs).
-// Design 1 (generate.mjs, the neofetch terminal) is self-contained.
-// Edit here to update the banner card.
+// Both card generators read shared profile data from this file.
 
 export const P = {
   handle: "alfonza1",

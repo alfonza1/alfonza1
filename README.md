@@ -4,8 +4,9 @@
        2. BANNER (logo card)  → banner_dark.svg / banner_light.svg
      To switch: comment out the active block and uncomment the other.
      Regenerate after editing:
-       node generate.mjs           # design 1 (self-contained)
+       node generate.mjs           # design 1 (data: profile.mjs)
        node generate-banner.mjs    # design 2 (data: profile.mjs)
+     Birthday uptime is regenerated daily by .github/workflows/update-uptime.yml.
      ====================================================================== -->
 
 <!-- DESIGN 1 · TERMINAL (neofetch) -->
