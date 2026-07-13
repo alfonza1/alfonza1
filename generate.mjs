@@ -3,17 +3,14 @@
 //
 //   node generate.mjs
 //
-// Stats (repos/commits) are baked in STATS below; refresh them with:
-//   gh api graphql -f query='{ viewer { ... } }'
-// Everything else is hand-authored profile content.
+// Public repository and authored-commit totals are refreshed by
+// update-profile-stats.mjs. Everything else is hand-authored profile content.
 
 import { writeFileSync } from "node:fs";
 import { P, uptime } from "./profile.mjs";
 
 // ---- profile data -----------------------------------------------------------
 // "Uptime" counts from birth (the neofetch meme) — recomputed on every run.
-const STATS = { repos: 43, commits: 468 };
-
 const INFO = [
   ["header", "alfonza1", "@github"],
   ["rule", 24],
@@ -35,7 +32,7 @@ const INFO = [
   ["gap"],
   ["header2", "Contributions"],
   ["rule", 13],
-  ["stat", "Repos", STATS.repos, "Commits", STATS.commits],
+  ["stat", "Repos", P.stats.repos, "Commits", P.stats.commits],
   ["gap"],
   ["palette"],
 ];
