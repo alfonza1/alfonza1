@@ -8,10 +8,10 @@
 // Everything else is hand-authored profile content.
 
 import { writeFileSync } from "node:fs";
+import { P, uptime } from "./profile.mjs";
 
 // ---- profile data -----------------------------------------------------------
 // "Uptime" counts from birth (the neofetch meme) — recomputed on every run.
-const BIRTHDAY = "2000-02-25T00:00:00Z";
 const STATS = { repos: 43, commits: 468 };
 
 const INFO = [
@@ -71,16 +71,6 @@ const THEMES = {
 };
 
 // ---- helpers ----------------------------------------------------------------
-function uptime(fromISO) {
-  const a = new Date(fromISO), b = new Date();
-  let y = b.getUTCFullYear() - a.getUTCFullYear();
-  let m = b.getUTCMonth() - a.getUTCMonth();
-  let d = b.getUTCDate() - a.getUTCDate();
-  if (d < 0) { m -= 1; d += new Date(Date.UTC(b.getUTCFullYear(), b.getUTCMonth(), 0)).getUTCDate(); }
-  if (m < 0) { y -= 1; m += 12; }
-  const p = (n, u) => `${n} ${u}${n === 1 ? "" : "s"}`;
-  return `${p(y, "year")}, ${p(m, "month")}, ${p(d, "day")}`;
-}
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
 // ---- svg builder ------------------------------------------------------------
@@ -91,7 +81,7 @@ function build(t) {
   const rows = INFO.length;
   const H = top + rows * LH + 24;
   const W = 928;
-  const upt = uptime(BIRTHDAY);
+  const upt = uptime(P.birthday);
 
   let defs = 0; // stagger index for the reveal animation
   const delay = () => (0.5 + defs++ * 0.14).toFixed(2);
@@ -171,4 +161,4 @@ function build(t) {
 
 writeFileSync("dark_mode.svg", build(THEMES.dark));
 writeFileSync("light_mode.svg", build(THEMES.light));
-console.log("wrote dark_mode.svg + light_mode.svg  (uptime:", uptime(BIRTHDAY) + ")");
+console.log("wrote dark_mode.svg + light_mode.svg  (uptime:", uptime(P.birthday) + ")");
