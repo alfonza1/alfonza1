@@ -12,7 +12,7 @@ export const P = {
   portfolio: "alfonza-dev.web.app",
   game: "playlastwords.com",
   // Public GitHub totals maintained by update-profile-stats.mjs.
-  stats: { repos: 31, commits: 505 },
+  stats: { repos: 32, commits: 659 },
   // badge row for the banner — [label, palette key], grouped by domain
   stack: [
     ["Java", "blue"], ["TypeScript", "blue"], ["Spring Boot", "green"], ["React", "green"],
