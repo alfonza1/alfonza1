@@ -32,7 +32,7 @@
 -->
 <div align="center">
   <p>
-    <a href="https://alfonza-dev.web.app"><b>🌐 Portfolio</b></a>
+    <a href="https://alfonza-dev.web.app"><b>Portfolio</b></a>
     &nbsp;·&nbsp;
     <a href="https://playlastwords.com"><b>playlastwords.com</b></a>
   </p>
