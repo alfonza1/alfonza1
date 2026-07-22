@@ -34,6 +34,6 @@
   <p>
     <a href="https://alfonza-dev.web.app"><b>🌐 Portfolio</b></a>
     &nbsp;·&nbsp;
-    <a href="https://playlastwords.com"><b>🎮 Last Words — play the game</b></a>
+    <a href="https://playlastwords.com"><b>playlastwords.com</b></a>
   </p>
 </div>
