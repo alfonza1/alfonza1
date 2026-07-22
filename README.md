@@ -30,12 +30,10 @@
   </a>
 </div>
 -->
-<!--
 <div align="center">
   <p>
     <a href="https://alfonza-dev.web.app"><b>🌐 Portfolio</b></a>
     &nbsp;·&nbsp;
-    <a href="https://www.playlastwords.com"><b>🎮 Last Words — play the game</b></a>
+    <a href="https://playlastwords.com"><b>🎮 Last Words — play the game</b></a>
   </p>
 </div>
--->
