@@ -14,8 +14,8 @@
 <div align="center">
   <a href="https://github.com/alfonza1">
     <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/alfonza1/alfonza1/main/dark_mode.svg">
-      <img alt="Alfonza — Full-Stack Developer @ JPMorgan Chase" src="https://raw.githubusercontent.com/alfonza1/alfonza1/main/light_mode.svg" width="860">
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/alfonza1/alfonza1/main/dark_mode.svg?v=20260725-no-contributions">
+      <img alt="Alfonza — Full-Stack Developer @ JPMorgan Chase" src="https://raw.githubusercontent.com/alfonza1/alfonza1/main/light_mode.svg?v=20260725-no-contributions" width="860">
     </picture>
   </a>
 </div>
