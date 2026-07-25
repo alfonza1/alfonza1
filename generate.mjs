@@ -3,9 +3,6 @@
 //
 //   node generate.mjs
 //
-// Public repository and authored-commit totals are refreshed by
-// update-profile-stats.mjs. Everything else is hand-authored profile content.
-
 import { writeFileSync } from "node:fs";
 import { P, uptime } from "./profile.mjs";
 
@@ -29,10 +26,6 @@ const INFO = [
   ["gap"],
   ["kv", "Projects", "playlastwords.com"],
   ["kv", "Portfolio", "alfonza-dev.web.app"],
-  ["gap"],
-  ["header2", "Contributions"],
-  ["rule", 13],
-  ["stat", "Repos", P.stats.repos, "Commits", P.stats.commits],
   ["gap"],
   ["palette"],
 ];
@@ -93,17 +86,10 @@ function build(t) {
     const d = delay();
     if (row[0] === "header")
       infoSvg += line(y, `<tspan fill="${t.green}" font-weight="700">${esc(row[1])}</tspan><tspan fill="${t.dim}">${esc(row[2])}</tspan>`, d);
-    else if (row[0] === "header2")
-      infoSvg += line(y, `<tspan fill="${t.green}" font-weight="700">${esc(row[1])}</tspan>`, d);
     else if (row[0] === "rule")
       infoSvg += line(y, `<tspan fill="${t.dim}">${"─".repeat(row[1])}</tspan>`, d);
     else if (row[0] === "kv")
       infoSvg += line(y, `<tspan fill="${t.blue}" font-weight="600">${esc(row[1])}</tspan><tspan fill="${t.dim}">: </tspan><tspan fill="${t.text}">${esc(row[2].replace("%UPTIME%", upt))}</tspan>`, d);
-    else if (row[0] === "stat")
-      infoSvg += line(y,
-        `<tspan fill="${t.blue}" font-weight="600">${esc(row[1])}</tspan><tspan fill="${t.dim}">: </tspan><tspan fill="${t.yellow}">${esc(row[2])}</tspan>` +
-        `<tspan fill="${t.dim}">   </tspan>` +
-        `<tspan fill="${t.blue}" font-weight="600">${esc(row[3])}</tspan><tspan fill="${t.dim}">: </tspan><tspan fill="${t.yellow}">${esc(row[4])}</tspan>`, d);
     else if (row[0] === "palette") {
       const cols = [t.red, t.yellow, t.green, t.cyan, t.blue, t.magenta, t.text, t.dim];
       let sq = "";
