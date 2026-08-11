@@ -15,7 +15,6 @@ const INFO = [
   ["kv", "Host", "Philadelphia, PA"],
   ["kv", "Kernel", "Full-Stack Developer @ JPMorgan Chase"],
   ["kv", "Uptime", "%UPTIME%"],
-  ["kv", "IDE", "VS Code · IntelliJ IDEA · Claude Code"],
   ["gap"],
   ["kv", "Languages", "Java · TypeScript · JavaScript · SQL"],
   ["kv", "Backend", "Spring Boot · REST · Microservices · PostgreSQL · Firebase/JWT"],
